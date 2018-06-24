@@ -6,5 +6,9 @@
     hello world
 </p>
 <script>
-    alert('hi')
+    // + prefix converts string to int
+    // || operator defines a fallback for falsy values
+    let value = +localStorage.getItem('counter') || 1;
+    localStorage.setItem('counter', value + 1);
+    alert('hello world: ' + value);
 </script>
