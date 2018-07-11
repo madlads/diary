@@ -1,0 +1,14 @@
+<!--python -m SimpleHTTPServer-->
+<head style="color:#908628c4">
+    Hello World This is me.
+</head>
+<p style="color:#72636c">
+    hello world
+</p>
+<script>
+    // + prefix converts string to int
+    // || operator defines a fallback for falsy values
+    let value = +localStorage.getItem('counter') || 1;
+    localStorage.setItem('counter', value + 1);
+    alert('hello world: ' + value);
+</script>
