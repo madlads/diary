@@ -1,14 +1,40 @@
-<!--python -m SimpleHTTPServer-->
-<head style="color:#908628c4">
+<!--python -m http.server 8000-->
+<!DOCTYPE html>
+<html>
+<div id="background">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    
+<title style="color:#908628c4">
     Hello World This is me.
+</title>
 </head>
-<p style="color:#72636c">
-    hello world
-</p>
+<link href="style.css" type="text/css" rel="stylesheet" />
 <script>
     // + prefix converts string to int
     // || operator defines a fallback for falsy values
     let value = +localStorage.getItem('counter') || 1;
     localStorage.setItem('counter', value + 1);
-    alert('hello world: ' + value);
+    document.getElementById("result").innerHTML = "You have logged on: " + value + " times";
 </script>
+<body id = "background">
+<div id="result"></div>
+<div id="box1">
+<h1>
+    First Box
+</h1>
+<h2>
+    H2 tag
+</h2>
+<p style ="color:#000">
+    Text
+</p>
+</div>
+
+<div id = "box2">
+<a href="http://google.com.au">Guess where this goes</a>
+</div>
+<img src="https://puu.sh/ATUb2/781a879e4f.png" style='width:100%;' alt="NULL" />
+</body>
+</div>
+</html>
